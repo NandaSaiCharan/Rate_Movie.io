@@ -67,7 +67,7 @@ h1 {
     background-color: #222;
     padding: 10px;
     border-radius: 10px;
-    width: 80%; /* Set width to 80% for better responsiveness */
+    width: 90%; /* Set width to 90% for better responsiveness */
     max-width: 800px; /* Max width for larger screens */
     text-align: left; /* Align text to the left */
 }
@@ -108,4 +108,50 @@ h1 {
 
 .star.rated {
     color: red; /* Color for rated stars */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #search-input {
+        width: 80%; /* Increase width on smaller screens */
+    }
+
+    #search-btn {
+        padding: 8px 16px; /* Smaller padding for button */
+    }
+
+    .movie-card {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align the content */
+    }
+
+    .movie-card img {
+        margin-bottom: 10px; /* Space below image */
+    }
+
+    .movie-card h3 {
+        font-size: 1.2em; /* Smaller title size */
+    }
+}
+
+@media (max-width: 480px) {
+    #search-input {
+        width: 100%; /* Full width on very small screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller font size */
+    }
+
+    .star {
+        font-size: 20px; /* Smaller stars */
+    }
 }
