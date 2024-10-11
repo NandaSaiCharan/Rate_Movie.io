@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #181818;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-btn:hover {
+    background-color: #f6121d;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.movie-card {
+    display: flex; /* Change to flex for horizontal layout */
+    margin: 10px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; /* Set width to 80% for better responsiveness */
+    max-width: 800px; /* Max width for larger screens */
+    text-align: left; /* Align text to the left */
+}
+
+.movie-card img {
+    width: 150px; /* Fixed width for image */
+    border-radius: 5px;
+    margin-right: 15px; /* Space between image and details */
+}
+
+.movie-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.movie-card p {
+    margin: 5px 0;
+    line-height: 1.4; /* Space between lines for readability */
+}
+
+.star-rating {
+    display: flex;
+    margin-top: 10px; /* Space above the star rating */
+}
+
+.star {
+    font-size: 24px; /* Size of the stars */
+    color: white; /* Default color */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 5px; /* Space between stars */
+    transition: color 0.2s; /* Transition for hover effect */
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: red; /* Change color on hover */
+}
+
+.star.rated {
+    color: red; /* Color for rated stars */
+}
